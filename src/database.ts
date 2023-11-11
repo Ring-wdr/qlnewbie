@@ -1,4 +1,3 @@
-// const csvToJson = require('convert-csv-to-json')
 import csvToJson from "convert-csv-to-json";
 
 export const database = {
@@ -29,5 +28,3 @@ Object.keys(database).forEach((key) => {
     });
   }
 });
-
-// module.exports = database
