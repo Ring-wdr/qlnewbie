@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
     "rootDirs": ["src"],
+    "verbatimModuleSyntax": true,
     "outDir": "dist",
     "lib": ["es2020"],
     "target": "es2020",
-    "module": "CommonJS",
+    "module": "esNext",
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "types": ["node"]
   },
-  "ts-node": {
-    "esm": true
-  }
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules"]
 }

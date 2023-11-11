@@ -2,11 +2,12 @@
   "name": "qlnewbie",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "compile": "tsc",
-    "start": "npm run compile && node ./dist/index.js",
-    "dev:server": "nodemon --watch src --exec 'npx' 'ts-node' src/index.ts",
+    "start": "node ./dist/index.js",
+    "dev": "tsc-watch --onSuccess 'node ./dist/index.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,11 +15,12 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/server": "^4.9.5",
-    "convert-csv-to-json": "^2.0.0"
+    "convert-csv-to-json": "^2.0.0",
+    "graphql": "^16.8.1"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
-    "ts-node": "^10.9.1",
+    "tsc-watch": "^6.0.4",
     "typescript": "^5.2.2"
   }
 }

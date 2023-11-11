@@ -1,6 +1,6 @@
 import csvToJson from "convert-csv-to-json";
 
-export const database = {
+export const database: Record<string, any> = {
   teams: [],
   people: [],
   roles: [],
