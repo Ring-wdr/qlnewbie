@@ -1,0 +1,25 @@
+enum Sex {
+  male
+  female
+}
+enum BloodType {
+  A
+  B
+  AB
+  O
+}
+enum Role {
+  developer
+  designer
+  planner
+}
+enum NewOrUsed {
+  new
+  used
+}
+
+union Given = Equipment | Supply
+interface Tool {
+  id: ID!
+  used_by: Role!
+}

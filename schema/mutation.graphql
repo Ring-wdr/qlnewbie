@@ -1,0 +1,4 @@
+type Mutation {
+  deleteEquipment(id: String): Equipment
+  deleteSupply(id: String): Supply
+}

@@ -24,13 +24,9 @@ const dataFiltered = (which: string, args) => {
 };
 
 export const dbWorks = {
-  deleteItem: (which, args) => {
-    const deleted = database[which].filter((item) => {
-      return item.id == args.id;
-    })[0];
-    database[which] = database[which].filter((item) => {
-      return item.id != args.id;
-    });
+  deleteItem: (which: string, args) => {
+    const deleted = database[which].filter((item) => item.id == args.id)[0];
+    database[which] = database[which].filter((item) => item.id != args.id);
     return deleted;
   },
 

@@ -1,0 +1,8 @@
+type RoleInfo {
+  id: ID!
+  job: String!
+  requirement: String
+  members: [People]
+  equipments: [Equipment]
+  softwares: [Software]
+}

@@ -1,6 +1,7 @@
 import csvToJson from "convert-csv-to-json";
+import { Query } from "./resolvers-types";
 
-export const database: Record<string, any> = {
+export const database: Query = {
   teams: [],
   people: [],
   roles: [],

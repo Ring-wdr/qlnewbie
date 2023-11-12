@@ -1,0 +1,6 @@
+type Software {
+  id: ID!
+  used_by: Role!
+  developed_by: String!
+  description: String
+}

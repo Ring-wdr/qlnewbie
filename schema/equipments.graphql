@@ -1,0 +1,6 @@
+type Equipment {
+  id: String
+  used_by: String
+  count: Int
+  new_or_used: String
+}

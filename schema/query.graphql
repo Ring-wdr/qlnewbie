@@ -1,0 +1,16 @@
+type Query {
+  equipments: [Equipment]
+  supplies: [Supply]
+  teams: [Team]
+  softwares: [Software]
+  people(
+    page: Int
+    per_page: Int
+    team: Int
+    sex: Sex
+    blood_type: BloodType
+    from: String
+  ): [People]
+  person(id: ID!): People
+  roles: [RoleInfo]
+}

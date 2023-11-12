@@ -1,12 +1,7 @@
 import { dbWorks } from "../dbWorks.js";
+import type { Resolvers } from "../resolvers-types.js";
 
-export const typeDefs = `#graphql
-    type Supply {
-        id: String
-        team: Int
-    }
-`;
-export const resolvers = {
+export const resolvers: Resolvers = {
   Query: {
     supplies: (parent, args) => dbWorks.getSupplies(args),
   },
